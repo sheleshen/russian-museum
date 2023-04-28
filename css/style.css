@@ -50,6 +50,10 @@
     --btn-s-click: #850F21;
     --btn-s-disabled: #9C9494;
 
+    /* INPUT */
+    --input-bg:#e1e1e6;
+    --input-text: #6B6B6B;
+
     /* GAP */
     --gap-menu: 20px;
     --gap-10: 10px;
@@ -60,10 +64,15 @@
 
 a, p, ul, li, h4, h5, h6 {
     font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--t-black);
 }
 
 h1, h2, h3 {
     font-family: 'calypso';
+    color: var(--t-black);
 }
 
 a, .link-logo {
@@ -205,14 +214,12 @@ h1 {
 }
 
 h2 {
-    font-family: 'Sangha';
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
-    line-height: 90%;
-    color: var(--text-black);
-    padding-top: 80px;
-    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 120%;
+    color: var(--t-black);
+    padding-top: 64px;
 }
 
 .img {
@@ -316,4 +323,107 @@ h2 {
     letter-spacing: 0.04em;
     color: var(--t-white);
     text-align: end;
+}
+
+/* о музее */
+
+.bg-about {
+    background-image: url(/images/image-1.png);
+    /* background-size: 50vw 100%; */
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.about-text {
+    width: 45%;
+    padding: 0px 32px 64px 0px;
+}
+
+.about-discription {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    padding: 24px 0px;
+}
+
+/* Выставки */
+
+/* События */
+
+/* Лекторий */
+
+/* Footer */
+
+.footer {
+    border-top: 1px solid var(--stroke-grey);
+}
+
+.section-footer {
+    border-right: 1px solid var(--stroke-grey);
+    border-left: 1px solid var(--stroke-grey);
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-item {
+    padding: 24px;
+    width: calc(100% / 3);
+}
+
+.footer-item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    padding-bottom: 12px;
+}
+
+.footer-menu-item {
+    font-size: 16px;
+}
+
+.footer-item-info {
+    padding: 24px;
+    width: calc(100% / 2); 
+}
+
+.footer-info {
+    display: flex;
+}
+
+.footer-item-descriprion {
+    font-size: 16px;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+
+    border: none;
+    padding: 10px 12px 5px 12px;
+    background: var(--input-bg);
+    border-radius: 4px; 
+    color: var(--input-text);
+
+    margin-bottom: 10px;
+}
+
+
+.input-form {
+    border: none;
+    background: var(--input-bg);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    color: var(--input-text);
+}
+
+.input-form:focus {
+    outline: none;
+}
+
+label {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    color: var(--input-text);
 }
