@@ -356,6 +356,71 @@ h2 {
 
 /* Выставки */
 
+.bg-grey {
+    background-color: var(--bg-lgrey);
+}
+
+.tabs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px 0px 24px 0px;
+}
+
+.tabs-item {
+    background-color: rgb(0, 0, 0, 0);
+    border: 1px solid var(--btn-s-hover);
+    border-radius: 4px;
+    color: var(--btn-s-hover);
+    border-radius: 4px;
+    padding: 14px 32px;
+    font-size: 14px;
+}
+
+.tabs-item:hover {
+    background-color: var(--btn-s-hover);
+    border: 1px solid var(--btn-s-hover);
+    color: var(--btn-text);
+    transition: all 300ms linear;
+}
+
+.exhibition-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--btn-disabled);
+    padding-bottom: 64px;
+}
+
+.exhibition-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+    border-bottom: 1px solid var(--btn-disabled);
+}
+
+.exhibition-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* padding-right: 64px; */
+    width: 33%;
+}
+
+.exhibition-data {
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--input-text);
+}
+
+.exhibition-title {
+    font-family: 'Calypso';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: right;
+}
+
 /* События */
 
 .title-btn {
@@ -456,6 +521,7 @@ h2 {
 
 .date {
     background-color: var(--main-red);
+    /* border-radius: 3px; */
     padding: 7px 9px 6px 9px;
     display: inline-block;
 }
