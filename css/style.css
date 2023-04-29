@@ -38,6 +38,7 @@
     --t-grey-light: #EBEBEB;
     --t-disabled: #6B6B6B;
 
+
     /* BUTTON */
     --btn-text: #FFFFFF;
 
@@ -184,6 +185,7 @@ a:hover {
     display: flex;
     gap: 8px;
     align-items: center;
+    max-height: 48px;
 }
 
 h1 {
@@ -355,6 +357,75 @@ h2 {
 /* Выставки */
 
 /* События */
+
+.title-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 64px;
+}
+
+.title-events {
+    padding-top: 0;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    border-bottom: 1px solid var(--stroke-grey);
+    border-left: 1px solid var(--stroke-grey);
+}
+
+.events-item {
+    border-top: 1px solid var(--stroke-grey);
+    border-right: 1px solid var(--stroke-grey);
+    padding: 24px;
+    width: calc(100% / 3);    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.events-item-img {
+    padding: 0px;
+    background-image: url(/images/image-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.events-item-img2 {
+    padding: 0px;
+    background-image: url(/images/image-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.title-date {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 115px;
+}
+
+.title-events-item {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.date-events-item {
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--t-disabled);
+}
+
+.text-events-item {
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--t-disabled);
+}
 
 /* Лекторий */
 
