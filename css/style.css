@@ -77,12 +77,12 @@ h1, h2, h3 {
 
 a, .link-logo {
     text-decoration: none;
-    color: var(--white);
+    color: var(--t-white);
     cursor: pointer;
 }
 
 a:hover {
-    color: var(--main-yellow);
+    color: var(--main-red);
     transition: color 300ms linear;
 }
 
@@ -178,6 +178,12 @@ a:hover {
     border: 1px solid var(--btn-s-click);
     color: var(--btn-s-click);
     transition: all 100ms linear;
+}
+
+.btn-arrow {
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 h1 {
@@ -352,6 +358,70 @@ h2 {
 
 /* Лекторий */
 
+.section-lecture {
+    padding-bottom: 64px;
+}
+
+.lecture {
+    display: flex;
+}
+
+.lectures-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    width: 67%;
+}
+
+.lectures-item {
+    border-bottom: 1px solid var(--stroke-grey);
+    padding-right: 32px;
+}
+
+.lectures-item:last-child {
+    border-bottom: 0px solid var(--stroke-grey);
+}
+
+.date {
+    background-color: var(--main-red);
+    padding: 7px 9px 6px 9px;
+    display: inline-block;
+}
+
+.date-text {
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--t-white);
+}
+
+.title-lectures {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    padding: 12px 0px 16px 0px;
+}
+
+.tickets {
+    width: 33%;
+    padding-left: 24px;
+    border-left: 1px solid var(--stroke-grey);
+}
+
+.title-tickets {
+    font-family: 'Calypso';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    padding-bottom: 16px;
+}
+
+.description-tickets {
+    font-size: 18px;
+    padding-bottom: 24px;
+}
+
 /* Footer */
 
 .footer {
@@ -367,9 +437,17 @@ h2 {
     display: flex;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+}
+
 .footer-item {
     padding: 24px;
-    width: calc(100% / 3);
+    /* width: calc(100% / 3); */
+    width: 33%;
+    border-right: 1px solid var(--stroke-grey);
 }
 
 .footer-item-title {
@@ -386,6 +464,11 @@ h2 {
 .footer-item-info {
     padding: 24px;
     width: calc(100% / 2); 
+    border-left: 1px solid var(--stroke-grey);
+}
+
+.footer-item-info:first-child {
+    border-left: 0px solid var(--stroke-grey);
 }
 
 .footer-info {
@@ -394,6 +477,7 @@ h2 {
 
 .footer-item-descriprion {
     font-size: 16px;
+    padding-bottom: 16px;
 }
 
 .subscription {
@@ -408,7 +492,6 @@ h2 {
 
     margin-bottom: 10px;
 }
-
 
 .input-form {
     border: none;
@@ -426,4 +509,20 @@ label {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 12px;
     color: var(--input-text);
+}
+
+.btn-width {
+    width: 100%;
+}
+
+.info-discription {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    border-top: 1px solid var(--stroke-grey);
+}
+
+.info-discription-item {
+    font-size: 13px;
 }
